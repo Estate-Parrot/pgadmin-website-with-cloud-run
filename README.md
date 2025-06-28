@@ -149,12 +149,12 @@ Open `servers.json` in your IDE and add the following content (replace the place
 {
   "Servers": {
     "1": {
-      "Name": "Cloud SQL DB",
+      "Name": "My Cloud SQL Database",
       "Group": "Servers",
-      "Host": "/cloudsql/YOUR_PROJECT_ID:REGION:INSTANCE_NAME",
+      "Host": "/cloudsql/striking-lane-458100-j4:us-central1:v1-database",
       "Port": 5432,
-      "Database": "YOUR_DB_NAME",
-      "Username": "YOUR_DB_USER",
+      "MaintenanceDB": "postgres",
+      "Username": "postgres",
       "SSLMode": "disable"
     }
   }
@@ -202,7 +202,7 @@ gcloud run deploy pgadmin-service \
   --platform=managed \
   --region=us-central1 \
   --allow-unauthenticated \
-  --set-env-vars=PGADMIN_DEFAULT_EMAIL=admin@example.com,PGADMIN_DEFAULT_PASSWORD=SecurePassword123,PGADMIN_CONFIG_SERVER_MODE=True,PGADMIN_CONFIG_SERVERS_JSON_PATH=/pgadmin4/servers.json \
+  --set-env-vars=PGADMIN_DEFAULT_EMAIL=admin@example.com,PGADMIN_DEFAULT_PASSWORD=SecurePassword123 \
   --add-cloudsql-instances=YOUR_PROJECT_ID:REGION:INSTANCE_NAME
 ```
 

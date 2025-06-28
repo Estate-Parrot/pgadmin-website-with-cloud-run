@@ -1,14 +1,13 @@
 {
-    "Servers": {
-      "1": {
-        "Name": "My Cloud SQL Database",
-        "Group": "Servers",
-        "Host": "/cloudsql/striking-lane-458100-j4:us-central1:v1-database-clone",
-        "Port": 5432,
-        "MaintenanceDB": "postgres",
-        "Username": "postgres",
-        "SSLMode": "disable"
-      }
+  "Servers": {
+    "1": {
+      "Name": "My Cloud SQL Database",
+      "Group": "Servers",
+      "Host": "/cloudsql/striking-lane-458100-j4:us-central1:v1-database",
+      "Port": 5432,
+      "MaintenanceDB": "postgres",
+      "Username": "postgres",
+      "SSLMode": "disable"
     }
   }
-  
+}
