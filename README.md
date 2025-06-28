@@ -2,6 +2,8 @@
 
 This guide walks you through deploying pgAdmin as a public website using Google Cloud Run and securely connecting it to a Google Cloud SQL PostgreSQL database via the Cloud SQL Proxy. From there you can map your domain with Cloudflare or other hosting services. This uses pgAdmin's official Docker Image. 
 
+This is made for Mac users, sorry :\. I would suggest feeding in the commands to your prefered LLM and asking for the windows/linux equivalents. 
+
 ---
 
 ## Table of Contents
