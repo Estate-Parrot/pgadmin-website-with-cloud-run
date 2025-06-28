@@ -1,12 +1,12 @@
 {
   "Servers": {
     "1": {
-      "Name": "My Cloud SQL Database",
+      "Name": "YOUR_DATABASE_NAME",
       "Group": "Servers",
-      "Host": "/cloudsql/striking-lane-458100-j4:us-central1:v1-database",
+      "Host": "/cloudsql/YOUR_PROJECT_ID:YOUR_REGION:YOUR_INSTANCE_NAME",
       "Port": 5432,
       "MaintenanceDB": "postgres",
-      "Username": "postgres",
+      "Username": "YOUR_DB_USERNAME",
       "SSLMode": "disable"
     }
   }
