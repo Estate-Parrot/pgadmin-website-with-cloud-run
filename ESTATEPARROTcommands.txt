@@ -1,0 +1,11 @@
+docker buildx build --platform linux/amd64 \
+  -t us-central1-docker.pkg.dev/striking-lane-458100-j4/pgadmin-repo/pgadmin:latest \
+  --push .
+
+gcloud run deploy pgadmin-service \
+  --image=us-central1-docker.pkg.dev/striking-lane-458100-j4/pgadmin-repo/pgadmin:latest \
+  --platform=managed \
+  --region=us-central1 \
+  --allow-unauthenticated \
+  --set-env-vars=PGADMIN_DEFAULT_EMAIL=daniel@estateparrot.com,PGADMIN_DEFAULT_PASSWORD=Parrot2025! \
+  --add-cloudsql-instances=striking-lane-458100-j4:us-central1:v1-database
